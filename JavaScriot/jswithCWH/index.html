@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="hey">
+    <H1>Learning JS with Code With Harry</H1>
+    </div>
+
+    <script src="script.js">
+
+// random number generator
+
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log(randomNumber);
+
+let guess = prompt("GUESS A NUMBER BETWEEN 1 AND 100");
+
+while (guess != randomNumber) {
+  if (guess < randomNumber) {
+    alert("It is less than random number");
+  } else if (guess>randomNumber){
+    alert("It is greater than random number");
+  }
+  guess = prompt("Guess again!!!");
+}
+alert("Congratulations, you guessed the number!");
+
+
+    </script>
+  </body>
+</html>
